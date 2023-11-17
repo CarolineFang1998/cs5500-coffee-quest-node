@@ -12,7 +12,7 @@ function SearchDetailController(app) {
         const location = req.params.location;
         const param = req.params.param;
         client.search({
-                          term: param+'+dog+friendly',
+                          term: param+'coffee',
                           location: location,
                           limit: '10',
                           categories: 'restaurants,bars',
