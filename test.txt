@@ -1,0 +1,21 @@
+Group 6 - Test
+Frontend Testing (React, HTML, CSS)
+- Component Tests
+    - Rendering Tests
+        - Test if all React components render without crashing.
+        - Validate the rendering of conditional components based on state changes
+
+- User Interaction Tests
+    - Simulate user events like clicking and searching.
+    - Verify the correct behavior on user interactions 
+    - Web pages responsive at any width of the browser
+    - Elements must never overlap each other unintentionally
+    - Allow users to register and create a new account
+    - Retrieve details from the remote API based on some unique identifier provided as a parameter from the search/results page
+    - Allow users to change their personal information. If a user is logged in then they can see their profile including sensitive information such as email and phone
+    - Display generic content for anonymous users and specific content for the logged in user
+    - Display additional related data from the local database
+
+Backend Testing (Node.js)
+- API Tests
+    - Mock API calls and test their integration with frontend components.
