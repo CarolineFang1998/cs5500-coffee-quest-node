@@ -7,7 +7,7 @@ import FollowsController from "./profile/follow/follows-controller.js";
 import session from "express-session";
 import SearchDetailController from "./search-detail/search-detail-controller.js";
 import ReviewsController from "./reviews/reviews-controller.js";
-import DealsController from "./deals/deals-controller.js";
+import DealsController from "./Deals/deals-controller.js";
 import FavoriteRestaurantsController from "./favoriteRestaurants/favoriteRestaurants-controller.js";
 // connect to the local database
 // mongoose.connect('mongodb://127.0.0.1:27017/tuiter');
@@ -22,7 +22,8 @@ const app = express();
 app.use(
     cors({
         credentials: true,
-        origin: "http://localhost:3000",
+        // origin: "http://localhost:3000",
+        origin: "https://yuhan-caroline-fang.netlify.app"
     })
 );
 app.use(express.json());
