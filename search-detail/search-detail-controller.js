@@ -15,7 +15,6 @@ function SearchDetailController(app) {
                           term: param+'coffee',
                           location: location,
                           limit: '10',
-                          open_now: true
                       }).then(response => {
             //console.log(JSON.stringify(response.jsonBody));
             res.send(response.jsonBody.businesses);

@@ -3,7 +3,7 @@ import cors from 'cors'
 import UsersController from "./users/users-controller.js";
 import mongoose from "mongoose";
 import SessionController from "./users/session-controller.js";
-import FollowsController from "./profile/Follow/follows-controller.js";
+import FollowsController from "./profile/follow/follows-controller.js";
 import session from "express-session";
 import SearchDetailController from "./search-detail/search-detail-controller.js";
 import ReviewsController from "./reviews/reviews-controller.js";
@@ -41,7 +41,7 @@ if (process.env.ENV === 'production') {
 app.use(session(sess));
 
 app.get("/", function (req, res) {
-    res.send("Welcome to Group 27's Final Project!");
+    res.send("Welcome to Group 6's Final Project!");
 });
 
 SearchDetailController(app);
