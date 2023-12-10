@@ -41,7 +41,7 @@ if (process.env.ENV === 'production') {
 app.use(session(sess));
 
 app.get("/", function (req, res) {
-    res.send("Welcome to Group 27's Final Project!");
+    res.send("Welcome to Group 6's Final Project!");
 });
 
 SearchDetailController(app);
