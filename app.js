@@ -31,7 +31,7 @@ app.use(express.json());
 let sess = {
     secret: "process.env.SECRET",
     resave: false,
-    cookie: { secure: false },
+    cookie: { secure:  true},
     saveUninitialized: true,
 };
 
