@@ -32,7 +32,11 @@ app.use(express.json());
 let sess = {
     secret: process.env.SECRET || "default_secret", // Use environment variable or a default value,
     resave: false,
-    cookie: { secure:  true},
+    // cookie: { secure:  true},
+    cookie: {
+        sameSite: 'lax',
+        secure: process.env.ENV === 'production' // true if in production
+    },
     saveUninitialized: true,
 };
 console.log("ENV" + process.env.ENV);
