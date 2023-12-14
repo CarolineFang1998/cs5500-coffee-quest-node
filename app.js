@@ -28,13 +28,14 @@ app.use(
 );
 app.use(express.json());
 
+console.log("SECRET" + process.env.SECRET);
 let sess = {
-    secret: "process.env.SECRET",
+    secret: process.env.SECRET,
     resave: false,
     cookie: { secure:  true},
     saveUninitialized: true,
 };
-
+console.log("ENV" +process.env.ENV);
 if (process.env.ENV === 'production') {
     app.set('trust proxy', 1)
     sess.cookie.secure = true;
